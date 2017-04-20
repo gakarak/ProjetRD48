@@ -1,6 +1,11 @@
 %% read the input image
 close all,clear all;
-I=im2double(imread('input.png'));
+% I=im2double(imread('bird_example/input.png'));
+% I=im2double(imread('bird_example/IMG_20160609_184326_800x600.jpg'));
+
+fimg = '/Users/alexanderkalinovsky/data/BanubaVideoAll/@From_android/frames_1-out/frame00347.png';
+% % % I=im2double(imread('bird_example/IMG_20170114_174235_600x800.jpg'));
+I=im2double(imread(fimg));
 
 %% get edge map
 % Canny edge detector is used here. Other edge detectors can also be used
